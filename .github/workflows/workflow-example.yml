@@ -1,5 +1,5 @@
 name: First Workflow
-on: workflow_dispatch #to run job manually
+on: workflow_dispatch #(to run job manually) https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
 jobs: 
   first-job:
     runs-on: ubuntu-latest #https://docs.github.com/ru/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
