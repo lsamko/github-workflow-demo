@@ -1,7 +1,7 @@
 name: Trigger the job based on event's activity type
 on:
   pull_request:
-    types: [opened, closed]
+    types: [opened, closed] #https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
 jobs: 
   first-job:
     runs-on: ubuntu-latest #https://docs.github.com/ru/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
