@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - main
-      - 'dev-*'
-      - 'feat/**'
+      - 'dev-*'    #dev-new, dev-this-is-new
+      - 'feat/**'  #feat/new, , feat/new/button
 jobs: 
   first-job:
     runs-on: ubuntu-latest #https://docs.github.com/ru/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
