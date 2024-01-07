@@ -1,0 +1,17 @@
+name: Trigger the job based on event's activity type
+on:
+  pull_request:
+    types: [opened, closed]
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest #https://docs.github.com/ru/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
+    steps: 
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Get code
+        uses: actions/checkout@v4  #https://github.com/marketplace?category=&type=actions&verification=&query=checkout  
+      - name: Print goodbye
+        run: |  # to run multiple shell commands
+          echo "Done!"
+          echo "Bye-bye!"
+      
